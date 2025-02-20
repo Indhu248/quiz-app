@@ -28,7 +28,7 @@ const Score = () => {
        <h1> Congratulations</h1>
        <h2>Your Score: {score}</h2>
        <p>Wanna retake the test <Link to='/home'>Click here</Link></p>
-       <p>See your previous history <Link to='/history'>Click here</Link></p>
+       // <p>See your previous history <Link to='/history'>Click here</Link></p>
        </div>
       {/* Additional code to display past scores */}
     </div>
