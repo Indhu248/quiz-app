@@ -1,4 +1,3 @@
-
 .welcome {
   height: 100vh;
   width: 100%;
@@ -183,20 +182,21 @@
 }
 
 .your__score > img {
-  height: 100px;
+  height: 70px;
 }
 
 .your__score > h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
 }
 
 .your__score > h2 {
-  font-size: 1.875rem;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .your__score > p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -227,6 +227,7 @@
 
   .your__score > h2 {
     font-size: 2.25rem;
+    margin: 0;
   }
 
   .your__score > p {
