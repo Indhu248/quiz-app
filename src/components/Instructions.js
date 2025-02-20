@@ -7,6 +7,7 @@ const Instructions = () => {
     "For integer-type questions, write your numerical answer clearly.",
     "No calculators unless specified.",
     "You have 30 minutes to complete this quiz.",
+    "please save your answer before proceeding to the next one. If you move to the next question without saving, your response may not be recorded, and you could lose points for that question."
   ];
   return (
     <div className="instructions">
