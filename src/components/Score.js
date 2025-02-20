@@ -9,7 +9,7 @@ import { integerTypeQuestions, multipleChoiceQuestions } from '../utils/question
 const Score = () => {
   const location = useLocation();
   const {score} = location.state || {score: 0};
-  const length = integerTypeQuestions.length + multipleChoiceQuestions.length
+  const length = integerTypeQuestions.length-1 + multipleChoiceQuestions.length-1
 
   return (
     <div className='score__board'>
@@ -23,3 +23,7 @@ const Score = () => {
        </div>
       {/* Additional code to display past scores */}
     </div>
+  );
+};
+
+export default Score;
