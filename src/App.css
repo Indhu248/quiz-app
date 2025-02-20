@@ -1,38 +1,232 @@
-.App {
+
+.welcome {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#8153ff, #6638fe);
+  background-color: #7746ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  line-height: 0;
+  transition: all 1s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome  h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome p {
+  font-size: 1.125rem;
+  margin:40px 0px;
+  color: #d6d6d6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome .btn {
+  font-size: 1.125rem; 
+  padding: 0.8125rem 3.125rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 550;
+  cursor: pointer;
+  margin: 0.625rem; 
+}
+
+.quiz__dashboard {
+  background-color: #ffffff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 1s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.timer {
+  margin: 0.625rem 0; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.time__left{
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 20px;
+}
+
+.question__list {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem; 
+  background-color: #EEEEFC;
+  border-radius: 10px;
+}
+
+.question__name {
+  display: flex;
+  align-items: center;
+  font-size: 1.375rem; 
+  font-weight: 700;
+  color: #1a215d;
+  border-radius: 12px;
+  margin-bottom: 2.5rem; 
+}
+
+.question__number {
+  display: flex;
+  align-self: flex-start;
+  background-color: #ffffff;
+  padding: 0.25rem 0.725rem;
+  margin-right: 0.625rem;
+  border-radius: 50px;
+  color: #8153ff;
+}
+
+.option {
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  font-weight: 550;
+  color: #1a215d;
+}
+
+.option:focus{
+  background-color: #8153ff36;
+}
+.option:hover{
+  background-color: #8153ff36;
+}
+
+.submit__button {
+  font-size: 1.125rem; 
+  padding: 0.625rem 1.875rem; 
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.next__button {
+  font-size: 1.125rem; 
+  padding: 0.625rem 1.875rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #8153ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttons_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user__input{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 0.625rem;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 2.45rem;
+  font-weight: 550;
+  color: #1a215d;
+}
+
+.your__score {
+  height: 100vh;
+  background-color: #8153ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.your__score > img {
+  height: 100px;
+}
+
+.your__score > h1 {
+  font-size: 2.5rem; 
+  color: #ffffff;
+}
+
+.your__score > h2 {
+  font-size: 1.875rem; 
+}
+
+.your__score > p {
+  font-size: 1.125rem; 
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+  .welcome > h1 {
+    font-size: 3rem; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .welcome > p,
+  .welcome .btn,
+  .submit__button,
+  .next__button {
+    font-size: 1.25rem;
+  }
+
+  .question__name {
+    font-size: 1.3rem;
+  }
+
+  .option {
+    font-size: 1.125rem; 
+  }
+
+  .your__score > h1 {
+    font-size: 3rem; 
+  }
+
+  .your__score > h2 {
+    font-size: 2.25rem; 
+  }
+
+  .your__score > p {
+    font-size: 1.25rem; 
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .welcome > h1 {
+    font-size: 3.5rem; 
+  }
+
+  .welcome > p,
+  .welcome .btn,
+  .submit__button,
+  .next__button {
+    font-size: 1.375rem; 
+  }
+
+  .question__name {
+    font-size: 1.425rem; 
+  }
+
+  .option {
+    font-size: 1rem; 
+  }
+
+  
+}
+ 
