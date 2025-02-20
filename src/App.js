@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Score from './components/Score'
 import History from './components/History'
+import Instructions from './components/Instructions'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       <Route path='/score' element={<Score />} />
       <Route path="/history" element={<History />} />
+      <Route path='/instructions' element={<Instructions />}/>
     </Routes>
     </BrowserRouter>
   )

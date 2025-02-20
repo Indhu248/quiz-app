@@ -114,6 +114,8 @@ const Quiz = () => {
     return <Navigate to="/score" state={{ score }} />;
   }
 
+  const getOptionLabel = (index) => String.fromCharCode(65 + index);
+
   return (
     <div className="quiz__dashboard">
       <div className="time__left">Time Left: {timeLeft}s</div>
@@ -144,7 +146,7 @@ const Quiz = () => {
               onClick={() => setSelectedOption(option)}
               disabled={isSubmitted} // Disable options after submission
               >
-                {n + 1}. {option}
+                {`${getOptionLabel(n)}. ${option}`}
               </button>
 )})}
           </div>

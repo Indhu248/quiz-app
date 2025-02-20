@@ -10,8 +10,8 @@ const Welcome = () => {
         <p>Challenge yourself with our diverse set of questions. Ready to begin?</p>
       </header>
       <nav>
-        <Link to='/home'>
-          <button className='btn'>Start Quiz</button>
+        <Link to='/instructions'>
+          <button className='btn'>Let's get started</button>
         </Link>
       </nav>
       </div>
