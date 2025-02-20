@@ -84,14 +84,6 @@ const Quiz = () => {
       setCurrentQuestionIndex(0);
     } else {
       setQuizCompleted(true);
-      if (db) {
-        const attempt = {
-          userId: 'user123', 
-           score: score,
-          timestamp: new Date(),
-        };
-        await saveQuizAttempt(db, attempt);
-      }
     }
     setDisabled(false);
     setIsSubmitted(false);
@@ -99,18 +91,18 @@ const Quiz = () => {
     setSelectedOption('');
   };
   
-  const handleQuizCompletion = async () => {
-    // setQuizCompleted(true);
-    const attempt = {
-      userId: 'user123', // Replace with dynamic user ID if available
-      score: score,
-      timestamp: new Date(),
-    };
-    await saveQuizAttempt(attempt);
-  };
+  // const handleQuizCompletion = async () => {
+  //   // setQuizCompleted(true);
+  //   const attempt = {
+  //     userId: 'user123', // Replace with dynamic user ID if available
+  //     score: score,
+  //     timestamp: new Date(),
+  //   };
+  //   await saveQuizAttempt(attempt);
+  // };
 
   if (quizCompleted) {
-    handleQuizCompletion();
+    // handleQuizCompletion();
     return <Navigate to="/score" state={{ score }} />;
   }
 
