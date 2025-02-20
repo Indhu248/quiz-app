@@ -9,19 +9,21 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 0;
+  /* line-height: 0; */
   transition: all 1s ease-in-out;
 }
 
 .welcome h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
+  /* line-height: 0; */
 }
 
 .welcome p {
-  font-size: 1.125rem;
-  margin: 40px 0px;
+  /* line-height: 1px; */
+  font-size: 1rem;
+  /* margin: 50px 0px; */
   color: #d6d6d6;
 }
 
@@ -40,27 +42,24 @@
 .instructions {
   height: 100vh;
   width: 100%;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  text-align: center;
   background-color: #7746ff;
 }
 .instructions > h1 {
   color: rgb(10, 10, 10);
 }
 .instructions ul {
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
 .instructions li{
   list-style: none;
   color: #d6d6d6;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   margin: 10px 0px;
 }
 
@@ -210,7 +209,8 @@
   .welcome .btn,
   .submit__button,
   .next__button {
-    font-size: 1.25rem;
+    margin: 10px 0px;
+    font-size: 1.2rem;
   }
 
   .question__name {
@@ -232,18 +232,29 @@
   .your__score > p {
     font-size: 1.25rem;
   }
+  .instructions ul{
+    width: 50%;
+    text-align: center;
+  }
+  .instructions li{
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  .welcome > h1 {
+  .welcome h1 {
     font-size: 3.5rem;
+    margin: 0;
   }
 
-  .welcome > p,
+  .welcome p{
+    margin-bottom: 30px;
+  }
   .welcome .btn,
   .submit__button,
   .next__button {
-    font-size: 1.375rem;
+    /* line-height: 10px; */
+    font-size: 1.2rem;
   }
 
   .question__name {
